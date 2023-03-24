@@ -1,15 +1,17 @@
 <section class="login">
     <h4>Login</h4>
-    <form>
+    <form [formGroup]="loginForm">
         <label>
             Login
-            <input type="email" placeholder="Informe o e-mail" />
+            <input type="email" formControlName="email" placeholder="Informe o e-mail" />
         </label>
         <label>
             Senha
-            <input type="password" placeholder="Informe a senha" />
+            <input type="password" formControlName="password" placeholder="Informe a senha" />
         </label>
-
+        <div class="mensagem__erro">
+            
+        </div>
         <button type="submit">Entrar</button>
     </form>
 </section>
