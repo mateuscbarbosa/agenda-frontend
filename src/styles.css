@@ -1,1 +1,62 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200;300&family=Montserrat:ital,wght@0,100;1,500&family=Poppins:ital,wght@0,100;0,200;1,500&display=swap');
+
+:root{
+    --branco: #ffffff;
+    --preto: #000000;
+    --bg-claro: #fff9fbff;
+    --bg-suave: #f4eddcff;
+    --bg-suave-escuro: #503455ff;
+    --bg-medio: #92443dff;
+    --bg-escuro: #1b1e60ff;
+    --bg-mais-escuro: #0e0004ff;
+    --bg-forte: #ca5227ff;
+    --status-erro: #96131E;
+    --status-alerta: #fc9e4fff;
+    --status-pendente: #3772ffff;
+    --status-confirmacao: #2A6041;
+    --status-ok: #90C290;
+}
+
+.ff-montserrat { font-family: 'Montserrat'; }
+.ff-poppins { font-family: 'Poppins'; }
+.ff-cairo { font-family: 'Cairo'; }
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: var(--bg-suave);
+}
+
+.titulo{
+    color: var(--bg-forte);
+}
+h1{
+    font-size: 6em;
+    font-weight: 1 , 700;
+}
+h2{
+    font-size: 3em;
+    font-weight: 1 , 500;
+}
+
+.container{
+    padding: 1rem 1rem 1rem 1rem;
+}
+
+.botao{
+    color: var(--bg-escuro);
+    background: var(--bg-forte);
+    max-width: 200px;
+    width: 170px;
+    padding: 0.5rem;
+    margin: 0 auto;
+    border: 2px solid var(--bg-mais-escuro);
+    border-radius: 30px;
+    transition: 0.5 ease;
+}
+.botao:hover{
+    background: var(--bg-medio);
+}

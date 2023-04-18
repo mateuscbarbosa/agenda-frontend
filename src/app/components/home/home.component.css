@@ -1,0 +1,21 @@
+.container{
+    margin: auto;
+    margin-top: 5%;
+}
+
+.home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 450px;
+    height: 600px;
+    padding: .5rem;
+    background: var(--bg-claro);
+    border: 1px solid var(--bg-mais-escuro);
+}
+
+.logo{    
+    width: 100%;
+    height: auto;
+}
