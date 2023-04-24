@@ -1,17 +1,21 @@
-<section class="login">
-    <h4>Login</h4>
+<section class="login container">
+    <h4 class="titulo ff-montserrat">Entrar</h4>
     <form [formGroup]="loginForm">
         <label>
-            Login
-            <input type="email" formControlName="email" placeholder="Informe o e-mail" />
+            <p class="ff-poppins">
+                Login
+                <input type="email" formControlName="email" placeholder="Informe o e-mail" />
+            </p>
         </label>
         <label>
-            Senha
-            <input type="password" formControlName="password" placeholder="Informe a senha" />
+            <p class="ff-poppins ">
+                Senha
+                <input type="password" formControlName="password" placeholder="Informe a senha" />
+            </p>
         </label>
-        <div class="mensagem__erro">
-            
+        <div class="mensagem-erro">
+            <small class="ff-cairo">Erro</small>
         </div>
-        <button type="submit">Entrar</button>
+        <button class="botao" type="submit">Entrar</button>
     </form>
 </section>
