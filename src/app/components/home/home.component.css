@@ -1,21 +1,23 @@
 .container{
     margin: auto;
-    margin-top: 5%;
+    margin-top: 2%;
 }
 
 .home{
     display: flex;
-    justify-content: center;
     align-items: center;
     flex-direction: column;
-    width: 450px;
-    height: 600px;
+    width: 600px;
+    height: 650px;
     padding: .5rem;
     background: var(--bg-claro);
     border: 1px solid var(--bg-mais-escuro);
 }
 
-.logo{    
-    width: 100%;
-    height: auto;
+.logo{
+    background-image: url('../../../assets/logo/tchutchucao-LOGO_bg_branco.jpg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 580px;
+    height: 580px;
 }

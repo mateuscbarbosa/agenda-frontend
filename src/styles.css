@@ -34,19 +34,19 @@ body{
     color: var(--bg-forte);
 }
 h1{
-    font-size: 6em;
+    font-size: 3em;
     font-weight: 1 , 700;
 }
 h2{
-    font-size: 3em;
+    font-size: 1.8em;
     font-weight: 1 , 500;
 }
 h3{
-    font-size: 2em;
+    font-size: 1.5em;
     font-weight: 1 , 500;
 }
 h4{
-    font-size: 1.5em;
+    font-size: 1em;
     font-weight: 1 , 500;
 }
 
