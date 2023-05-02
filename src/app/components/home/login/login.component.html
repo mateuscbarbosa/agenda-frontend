@@ -1,21 +1,17 @@
 <section class="login container">
-    <h2 class="titulo ff-montserrat">Entrar</h2>
+    <!-- <h2 class="titulo ff-montserrat">Entrar</h2> -->
     <form [formGroup]="loginForm">
         <label>
-            <p class="ff-poppins">
-                Login
+            <p class="ff-poppins">Login</p>
                 <input type="email" formControlName="email" placeholder="Informe o e-mail" />
-            </p>
         </label>
         <label>
-            <p class="ff-poppins ">
-                Senha
+            <p class="ff-poppins">Senha</p>
                 <input type="password" formControlName="password" placeholder="Informe a senha" />
-            </p>
         </label>
-        <div class="mensagem-erro">
-            <!-- <small class="ff-cairo">Erro</small> -->
-        </div>
         <button class="botao" type="submit">Entrar</button>
     </form>
 </section>
+<div class="mensagem-erro">
+    <small class="ff-cairo">Erro</small>
+</div>
