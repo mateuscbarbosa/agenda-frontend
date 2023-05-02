@@ -9,6 +9,9 @@
             <p class="ff-poppins">Senha</p>
                 <input type="password" formControlName="password" placeholder="Informe a senha" />
         </label>
-        <button class="botao" type="submit">Entrar</button>
+        <button class="botao">Entrar</button>
     </form>
 </section>
+<app-mensagem *ngIf="loginForm.get('email')?.errors?.['required'] && loginForm.get('email')?.touched" mensagem="E-mail é obrigarório"></app-mensagem>
+<app-mensagem *ngIf="loginForm.get('email')?.errors?.['email'] && loginForm.get('email')?.touched" mensagem="E-mail informado é inválido"></app-mensagem>
+<app-mensagem *ngIf="loginForm.get('password')?.errors?.['required'] && loginForm.get('password')?.touched" mensagem="Senha é obrigarória"></app-mensagem>

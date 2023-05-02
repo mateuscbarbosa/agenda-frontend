@@ -13,7 +13,7 @@ export class LoginComponent implements OnInit {
   constructor(private formBuilder: FormBuilder){}
   
   ngOnInit(): void {
-    this.formBuilder.group({
+    this.loginForm = this.formBuilder.group({
       email: ['', Validators.compose([
           Validators.required,
           Validators.email
@@ -23,6 +23,5 @@ export class LoginComponent implements OnInit {
       ])]
     });
   }
-
 
 }
