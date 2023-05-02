@@ -53,13 +53,3 @@ h4{
 .container{
     padding: 1rem 1rem 1rem 1rem;
 }
-
-.mensagem-erro{
-    background-color: var(--status-alerta);
-    color: var(--status-erro);
-    width: 100%;
-    text-align: center;
-}
-small{
-    font-size: 1.2rem;
-}
