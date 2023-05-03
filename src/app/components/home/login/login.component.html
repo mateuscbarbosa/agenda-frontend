@@ -1,6 +1,6 @@
 <section class="login container">
     <!-- <h2 class="titulo ff-montserrat">Entrar</h2> -->
-    <form [formGroup]="loginForm">
+    <form [formGroup]="loginForm" (submit)="login()">
         <label>
             <p class="ff-poppins">Login</p>
                 <input type="email" formControlName="email" placeholder="Informe o e-mail" />
