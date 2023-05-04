@@ -1,3 +1,7 @@
+footer{
+    cursor: default;
+}
+
 .footer{
     background-color: var(--preto);
     color: var(--branco);
