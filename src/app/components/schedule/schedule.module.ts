@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 
 import { ScheduleRoutingModule } from './schedule-routing.module';
 import { ScheduleComponent } from './schedule/schedule.component';
+import { FooterModule } from '../footer/footer.module';
 
 
 @NgModule({
@@ -11,7 +12,8 @@ import { ScheduleComponent } from './schedule/schedule.component';
   ],
   imports: [
     CommonModule,
-    ScheduleRoutingModule
+    ScheduleRoutingModule,
+    FooterModule
   ]
 })
 export class ScheduleModule { }
