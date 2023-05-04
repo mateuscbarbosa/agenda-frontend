@@ -4,6 +4,7 @@ import { CommonModule } from '@angular/common';
 import { ScheduleRoutingModule } from './schedule-routing.module';
 import { ScheduleComponent } from './schedule/schedule.component';
 import { FooterModule } from '../footer/footer.module';
+import { HeaderModule } from '../header/header.module';
 
 
 @NgModule({
@@ -13,6 +14,7 @@ import { FooterModule } from '../footer/footer.module';
   imports: [
     CommonModule,
     ScheduleRoutingModule,
+    HeaderModule,
     FooterModule
   ]
 })
