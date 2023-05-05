@@ -1,5 +1,140 @@
 <app-header></app-header>
-<section>
+<section class="container">
+    <div class="scheduleHeader">
+        <div class="title ff-montserrat">
+            <h4>Banho e Tosa</h4>
+        </div>
+        <div class="buttons">
+            <button class="currentDate ff-poppins">
+                {{ currentDate | date:"dd/MM/yyyy"}}
+            </button>
+            <button class="addTime ff-poppins">
+                Adicionar
+            </button>
+        </div>
+    </div>
+    <div class="tableSchedule">
+        <table class="schedule">
+            <thead>
+                <tr>
+                    <th class="ff-montserrat">
+                        Horário
+                    </th>
+                    <th class="ff-montserrat">
+                        Dono
+                    </th>
+                    <th class="ff-montserrat">
+                        Pet
+                    </th>
+                    <th  class="ff-montserrat">
+                        Espécie
+                    </th>
+                    <th  class="ff-montserrat">
+                        Raça
+                    </th>
+                    <th  class="ff-montserrat">
+                        Contato
+                    </th>
+                    <th class="ff-montserrat">
+                        Serviços
+                    </th>
+                    <th class="ff-montserrat">
+                        Observação
+                    </th>
+                    <th class="ff-montserrat">
+                        Valor
+                    </th>
+                    <th class="ff-montserrat">
+                        Avisado
+                    </th>
+                    <th class="ff-montserrat">
+                        Entregue
+                    </th>
+                    <th class="ff-montserrat">
+                        Pago
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="row">
+                    <td>
+                        00:00
+                    </td>
+                    <td>
+                        alguém
+                    </td>
+                    <td>
+                        coisinha
+                    </td>
+                    <td>
+                        gato
+                    </td>
+                    <td>
+                        vira lata
+                    </td>
+                    <td>
+                        00 00000-0000
+                    </td>
+                    <td>
+                        Banho
+                    </td>
+                    <td>
+                        x
+                    </td>
+                    <td>
+                        R$ 10
+                    </td>
+                    <td>
+                        N
+                    </td>
+                    <td>
+                        N
+                    </td>
+                    <td>
+                        N
+                    </td>
+                </tr>
+                <tr class="row">
+                    <td>
+                        00:00
+                    </td>
+                    <td>
+                        teste
+                    </td>
+                    <td>
+                        teste
+                    </td>
+                    <td>
+                        teste
+                    </td>
+                    <td>
+                        teste
+                    </td>
+                    <td>
+                        00 00000-0000
+                    </td>
+                    <td>
+                        teste
+                    </td>
+                    <td>
+                        x
+                    </td>
+                    <td>
+                        R$ 100
+                    </td>
+                    <td>
+                        N
+                    </td>
+                    <td>
+                        N
+                    </td>
+                    <td>
+                        N
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
 
 </section>
 <app-footer></app-footer>

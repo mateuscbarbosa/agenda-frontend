@@ -1,0 +1,103 @@
+.container{
+    background-color: var(--bg-claro);
+    margin: 30px;
+}
+
+.scheduleHeader{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.title{
+    margin-left: 10px;
+    background-color: var(--cinza);
+    display: block;
+	border: 1px solid var(--bg-mais-escuro);
+    border-radius: 15px;
+    padding: 2px 250px 2px 250px;
+}
+
+.buttons{
+    background-color: var(--cinza);
+	border: 1px solid var(--bg-mais-escuro);
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-around;
+    padding: 2px 50px 2px 50px;
+}
+
+.currentDate{
+    padding: 0px 5px 0px 5px;
+	color: var(--bg-escuro);
+	background-color: var(--status-pendente);
+	text-decoration: none;
+	transition: .5s;
+	display: block;
+	border: 1px solid var(--bg-mais-escuro);
+    border-radius: 15px;
+    font-weight: bold;
+}
+
+.currentDate:hover{
+    background-color: var(--bg-escuro);
+    color: var(--branco);
+}
+
+.addTime{
+    padding: 0px 5px 0px 5px;
+	color: var(--bg-escuro);
+	background-color: var(--status-ok);
+	text-decoration: none;
+	transition: .5s;
+	display: block;
+	border: 1px solid var(--bg-mais-escuro);
+    border-radius: 15px;
+    font-weight: bold;
+}
+
+.addTime:hover{
+    background-color: var(--status-confirmacao);
+    color: var(--branco);
+}
+
+.tableSchedule{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    padding: 5px;
+}
+
+table{
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.schedule{
+    border: 1px solid var(--cinza);
+    border-collapse: separate;
+    border-spacing: 0px;
+}
+
+th{
+    font-size: 1.5em;;
+    font-weight: bolder;
+    padding: 10px;
+}
+
+.row{
+    border: 1px solid var(--bg-mais-escuro);
+    text-align: center;
+}
+
+.row:hover{
+    background-color: var(--cinza);
+    font-weight: bold;
+}
+
+td{
+    border-top: 1px solid var(--bg-mais-escuro);
+    width: auto;
+    padding: 10px;
+}
