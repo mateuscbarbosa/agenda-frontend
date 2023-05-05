@@ -1,16 +1,16 @@
 <header class="mainHeader">
     <div class="container">
         <img src="a" alt="">
-        <a>LOGO AQUI</a>
+        <a [routerLink]="['schedule']">LOGO AQUI</a>
         <nav class="header ff-poppins">
-            <a class="navLink">Usuários</a>
-            <a class="navLink">Clientes</a>
-            <a class="navLink">Serviços</a>
-            <a class="navLink">Relatórios</a>
+            <a class="navLink" [routerLink]="['users/users']">Usuários</a>
+            <a class="navLink" [routerLink]="['clients/clients']">Clientes</a>
+            <a class="navLink" [routerLink]="['tasks/tasks']">Serviços</a>
+            <a class="navLink" [routerLink]="['reports/reports']">Relatórios</a>
             <div class="logedUser ff-montserrat">
                 USUÁRIO LOGADO
             </div>
-            <a class="navLink logout">Sair</a>
+            <a class="navLink logout" [routerLink]="['']">Sair</a>
         </nav>
     </div>
 </header>
