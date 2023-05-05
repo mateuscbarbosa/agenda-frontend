@@ -5,8 +5,9 @@
             <h4>Banho e Tosa</h4>
         </div>
         <div class="buttons">
-            <button class="currentDate ff-poppins">
+            <button class="currentDate ff-poppins" (click)="selectedDate()">
                 {{ currentDate | date:"dd/MM/yyyy"}}
+                <app-select-date></app-select-date>
             </button>
             <button class="addTime ff-poppins">
                 Adicionar

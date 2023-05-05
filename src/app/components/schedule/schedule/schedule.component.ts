@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { SelectDateModule } from '../../select-date/select-date.module';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-schedule',
@@ -9,4 +11,9 @@ export class ScheduleComponent {
 
   currentDate = new Date();
   
+  constructor(private router:Router){}
+
+  selectedDate(){
+    this.router.navigate(['selectDate']);
+  }
 }
