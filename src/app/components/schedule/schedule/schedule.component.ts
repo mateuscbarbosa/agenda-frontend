@@ -10,10 +10,11 @@ import { Router } from '@angular/router';
 export class ScheduleComponent {
 
   currentDate = new Date();
-  
+  selectedDateShow = false;
+
   constructor(private router:Router){}
 
   selectedDate(){
-    this.router.navigate(['selectDate']);
+    this.selectedDateShow = true;
   }
 }
