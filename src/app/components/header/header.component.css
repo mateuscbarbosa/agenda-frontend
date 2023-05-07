@@ -15,6 +15,11 @@
     align-items: center;
 }
 
+.smallLogo{
+    height: 50px;
+    width: 80px;
+}
+
 .navLink{
     padding: 10px;
 	margin-bottom: 10px;
