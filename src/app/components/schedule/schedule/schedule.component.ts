@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import { SelectDateModule } from '../../select-date/select-date.module';
 import { Router } from '@angular/router';
+import { SelectDateService } from '../../select-date/service/select-date.service';
 
 @Component({
   selector: 'app-schedule',
@@ -9,12 +9,15 @@ import { Router } from '@angular/router';
 })
 export class ScheduleComponent {
 
-  currentDate = new Date();
+  currentDate = this.selectDateService.getToday();
   selectedDateShow = false;
-
-  constructor(private router:Router){}
+  
+  constructor(private selectDateService:SelectDateService, private router:Router){}
 
   selectedDate(){
     this.selectedDateShow = true;
+    this.currentDate = this.selectDateService.returnDateSelected();
   }
+
+  
 }
