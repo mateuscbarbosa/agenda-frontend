@@ -1,11 +1,11 @@
 <section>
     <div class="modal">
-        <form (submit)="selectedDate()">
+        <form class="dateBox">
             <label>
-                Selecione a data:
+                <p class="ff-poppins">Selecione a data:</p>
                 <input type="date">
             </label>
-            <button class="button">Selecionar</button>
+            <button class="button ff-poppins" (click)="selectedDate">Selecionar</button>
         </form>
     </div>
     <div class="overlay"></div>
