@@ -7,8 +7,11 @@
                     type="date"
                     formControlName="selectedDate">
             </label>
-            <button class="button ff-poppins" (click)="selectDate()">Selecionar</button>
         </form>
+        <div class="buttons">
+            <button class="button ff-poppins" (click)="selectDate()">Selecionar</button>
+            <button class="button-cancel ff-poppins" (click)="cancel()">Cancelar</button>
+        </div>
     </div>
-    <div class="overlay"></div>
+    <div class="overlay" (click)="cancel()"></div>
 </section>

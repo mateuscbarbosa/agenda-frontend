@@ -8,6 +8,7 @@ export class SelectDateService {
   constructor() { }
 
   private selectedDate!: Date;
+  private selectedDateDisplay!: boolean;
 
   getToday(): Date{
     return new Date();
@@ -19,5 +20,13 @@ export class SelectDateService {
 
   returnDateSelected(): Date{
     return this.selectedDate;
+  }
+
+  getSelectedDateDisplay(): boolean{
+    return this.selectedDateDisplay;
+  }
+
+  setSelectedDateDisplay(display: boolean){
+    this.selectedDateDisplay = display;
   }
 }

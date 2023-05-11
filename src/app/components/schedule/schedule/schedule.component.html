@@ -6,11 +6,11 @@
         </div>
         <div class="buttons">
             <button class="currentDate ff-poppins" (click)="selectedDate()">
-                {{ currentDate | date:"dd/MM/yyyy"}}
-                <div *ngIf="selectedDateShow">
-                    <app-select-date></app-select-date>
-                </div>
+                <p>{{ currentDate | date:"dd/MM/yyyy"}}</p>
             </button>
+            <div [ngClass]="display()">
+                <app-select-date></app-select-date>
+            </div>
             <button class="addTime ff-poppins">
                 Adicionar
             </button>

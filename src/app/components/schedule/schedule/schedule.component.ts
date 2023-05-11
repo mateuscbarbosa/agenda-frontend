@@ -7,17 +7,24 @@ import { SelectDateService } from '../../select-date/service/select-date.service
   templateUrl: './schedule.component.html',
   styleUrls: ['./schedule.component.css']
 })
-export class ScheduleComponent {
+export class ScheduleComponent{
 
   currentDate = this.selectDateService.getToday();
-  selectedDateShow = false;
-  
-  constructor(private selectDateService:SelectDateService, private router:Router){}
 
+  constructor(private selectDateService:SelectDateService, private router:Router){}
+   
   selectedDate(){
-    this.selectedDateShow = true;
+    this.selectDateService.setSelectedDateDisplay(true);
     this.currentDate = this.selectDateService.returnDateSelected();
   }
-
   
+  display():string{
+    if(this.selectDateService.getSelectedDateDisplay()){
+      return "showSelectDate";
+    }
+    else{
+      return "hideSelectDate";
+    }
+    
+  }
 }
